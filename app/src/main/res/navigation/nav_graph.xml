@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="br.com.babas.capurro.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_teste"
+            app:destination="@id/teste" />
+    </fragment>
+    <fragment
+        android:id="@+id/teste"
+        android:name="br.com.babas.capurro.ui.main.Teste"
+        android:label="fragment_teste"
+        tools:layout="@layout/fragment_teste">
+        <action
+            android:id="@+id/action_teste_to_somatico"
+            app:destination="@id/somaticoOrelha" />
+    </fragment>
+    <fragment
+        android:id="@+id/somaticoOrelha"
+        android:name="br.com.babas.capurro.ui.main.Somatico"
+        android:label="fragment_somatico"
+        tools:layout="@layout/fragment_somatico_orelha">
+        <action
+            android:id="@+id/action_somaticoOrelha_to_somaticoGlMamaria"
+            app:destination="@id/somaticoGlMamaria" />
+    </fragment>
+    <fragment
+        android:id="@+id/somaticoGlMamaria"
+        android:name="br.com.babas.capurro.ui.main.SomaticoGlMamaria"
+        android:label="fragment_somatico_gl_mamaria"
+        tools:layout="@layout/fragment_somatico_gl_mamaria">
+        <action
+            android:id="@+id/action_somaticoGlMamaria_to_somaticoGlandulaMamaria2"
+            app:destination="@id/somaticoGlandulaMamaria2" />
+    </fragment>
+    <fragment
+        android:id="@+id/somaticoGlandulaMamaria2"
+        android:name="br.com.babas.capurro.ui.main.SomaticoGlandulaMamaria2"
+        android:label="SomaticoGlandulaMamaria2"
+        tools:layout="@layout/fragment_somatico_glandula_mamaria2">
+        <action
+            android:id="@+id/action_somaticoGlandulaMamaria2_to_texturaDaPele"
+            app:destination="@id/texturaDaPele" />
+    </fragment>
+    <fragment
+        android:id="@+id/texturaDaPele"
+        android:name="br.com.babas.capurro.ui.main.TexturaDaPele"
+        android:label="fragment_textura_da_pele"
+        tools:layout="@layout/fragment_textura_da_pele">
+        <action
+            android:id="@+id/action_texturaDaPele_to_pregasPlantares"
+            app:destination="@id/pregasPlantares" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregasPlantares"
+        android:name="br.com.babas.capurro.ui.main.PregasPlantares"
+        android:label="fragment_pregas_plantares"
+        tools:layout="@layout/fragment_pregas_plantares">
+        <action
+            android:id="@+id/action_pregasPlantares_to_pontuacaoFinal"
+            app:destination="@id/pontuacaoFinal" />
+        <action
+            android:id="@+id/action_pregasPlantares_to_sinalDoCachecol"
+            app:destination="@id/sinalDoCachecol" />
+    </fragment>
+    <fragment
+        android:id="@+id/pontuacaoFinal"
+        android:name="br.com.babas.capurro.ui.main.PontuacaoFinal"
+        android:label="fragment_pontuacao_final"
+        tools:layout="@layout/fragment_pontuacao_final" />
+    <fragment
+        android:id="@+id/sinalDoCachecol"
+        android:name="br.com.babas.capurro.ui.main.sinalDoCachecol"
+        android:label="fragment_sinal_do_cachecol"
+        tools:layout="@layout/fragment_sinal_do_cachecol" >
+        <action
+            android:id="@+id/action_sinalDoCachecol_to_posicicaoDaCabeca"
+            app:destination="@id/posicicaoDaCabeca" />
+    </fragment>
+    <fragment
+        android:id="@+id/posicicaoDaCabeca"
+        android:name="br.com.babas.capurro.ui.main.posicicaoDaCabeca"
+        android:label="fragment_posicicao_da_cabeca"
+        tools:layout="@layout/fragment_posicicao_da_cabeca" >
+        <action
+            android:id="@+id/action_posicicaoDaCabeca_to_pontuacaoFinal"
+            app:destination="@id/pontuacaoFinal" />
+    </fragment>
+</navigation>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CAPURRO</string>
+    <string name="txt_formato_orelha">Formato da orelha</string>
+    <string name="txt_formato_orelha_1">Plana e sem curvatura na parte superior. 0</string>
+    <string name="txt_formato_orelha_2">Parte superior parcialmente curvada. 8</string>
+    <string name="txt_formato_orelha_3">Curvatura quase toda presente. 16</string>
+    <string name="txt_formato_orelha_4">Pavilhão auditivo bem definido. 24</string>
+
+    <string name="txt_glandula_mamaria">Glândula mamária</string>
+    <string name="txt_glandula_mamaria_1">Não palpável. 0</string>
+    <string name="txt_glandula_mamaria_2">Palpável, menor que 5mm. 5</string>
+    <string name="txt_glandula_mamaria_3">Palpável, entre 5mm e 10mm. 10</string>
+    <string name="txt_glandula_mamaria_4">Palpável, maior que 10mm. 15</string>
+
+    <string name="txt_formato_dos_mamilos">Formato dos mamilos</string>
+    <string name="txt_glandula_mamaria2_1">Apenas o mamilo visível, sem auréola. 0</string>
+    <string name="txt_glandula_mamaria2_2">Mamilo bem definido, com auréola menor que 0,75cm. 5</string>
+    <string name="txt_glandula_mamaria2_3">Auréola visível, não elevada, maior que 0,75cm. 10</string>
+    <string name="txt_glandula_mamaria2_4">Auréola elevada, maior que 0,75cm. 15</string>
+
+    <string name="txt_textura_da_pele">Textura da Pele</string>
+    <string name="txt_textura_da_pele_1">Pele fina e gelatinosa. 0</string>
+    <string name="txt_textura_da_pele_2">Pele fina e lisa. 5</string>
+    <string name="txt_textura_da_pele_3">Pele lisa, com discreta descamação superficial. 10</string>
+    <string name="txt_textura_da_pele_4">Pele um pouco mais grossa, sulcos superficiais e descamação de mãos e pés. 15</string>
+    <string name="txt_textura_da_pele_5">Pele grossa e apergaminhada. 20</string>
+
+    <string name="txt_pregas_plantares">Pregas Plantares</string>
+    <string name="txt_pregas_plantares_1">Pregas ausentes. 0</string>
+    <string name="txt_pregas_plantares_2">Marcas vermelhas mal definidas na metade anterior da planta.5</string>
+    <string name="txt_pregas_plantares_3">Marcas vermelhas bem definidas na metade anterior da planta e sulcos no terço anterior das plantas. 10</string>
+    <string name="txt_pregas_plantares_4">Sulco na metade anterior das plantas. 15</string>
+    <string name="txt_pregas_plantares_5">Sulcos profundos, além da metade anterior  das plantas. 20</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
