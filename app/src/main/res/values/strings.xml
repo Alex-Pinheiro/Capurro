@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">CAPURRO</string>
-    <string name="txt_formato_orelha">Formato da orelha</string>
+    <string name="txt_formato_orelha">Formato da Orelha</string>
     <string name="txt_formato_orelha_1">Plana e sem curvatura na parte superior. 0</string>
     <string name="txt_formato_orelha_2">Parte superior parcialmente curvada. 8</string>
     <string name="txt_formato_orelha_3">Curvatura quase toda presente. 16</string>
     <string name="txt_formato_orelha_4">Pavilhão auditivo bem definido. 24</string>
 
-    <string name="txt_glandula_mamaria">Glândula mamária</string>
+    <string name="txt_glandula_mamaria">Glândula Mamária</string>
     <string name="txt_glandula_mamaria_1">Não palpável. 0</string>
     <string name="txt_glandula_mamaria_2">Palpável, menor que 5mm. 5</string>
     <string name="txt_glandula_mamaria_3">Palpável, entre 5mm e 10mm. 10</string>
     <string name="txt_glandula_mamaria_4">Palpável, maior que 10mm. 15</string>
 
-    <string name="txt_formato_dos_mamilos">Formato dos mamilos</string>
+    <string name="txt_formato_dos_mamilos">Formato dos Mamilos</string>
     <string name="txt_glandula_mamaria2_1">Apenas o mamilo visível, sem auréola. 0</string>
     <string name="txt_glandula_mamaria2_2">Mamilo bem definido, com auréola menor que 0,75cm. 5</string>
     <string name="txt_glandula_mamaria2_3">Auréola visível, não elevada, maior que 0,75cm. 10</string>
@@ -27,10 +27,39 @@
 
     <string name="txt_pregas_plantares">Pregas Plantares</string>
     <string name="txt_pregas_plantares_1">Pregas ausentes. 0</string>
-    <string name="txt_pregas_plantares_2">Marcas vermelhas mal definidas na metade anterior da planta.5</string>
+    <string name="txt_pregas_plantares_2">Marcas vermelhas mal definidas na metade anterior da planta. 5</string>
     <string name="txt_pregas_plantares_3">Marcas vermelhas bem definidas na metade anterior da planta e sulcos no terço anterior das plantas. 10</string>
     <string name="txt_pregas_plantares_4">Sulco na metade anterior das plantas. 15</string>
     <string name="txt_pregas_plantares_5">Sulcos profundos, além da metade anterior  das plantas. 20</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="txt_sinal_do_cachecol">Sinal do Cachecol</string>
+    <string name="txt_sinal_do_cachecol_1">O cotovelo alcança a linha axilar anterior do lado oposto. 0</string>
+    <string name="txt_sinal_do_cachecol_2">O cotovelo situado entre a linha anterior do lado oposto e a linha média. 6</string>
+    <string name="txt_sinal_do_cachecol_3">O cotovelo situado ao nível da linha média. 12</string>
+    <string name="txt_sinal_do_cachecol_4">O cotovelo situado entre a linha média e a linha axilar anterior do mesmo lado. 18</string>
+
+    <string name="txt_posicao_cabeca">Posição da cabeça</string>
+    <string name="txt_posicao_cabeca_1">Cabeça totalmente deflexionada, ângulo torácico 270º. 0</string>
+    <string name="txt_posicao_cabeca_2">Ângulo cervicotorácico entre 180° e 270º. 4</string>
+    <string name="txt_posicao_cabeca_3">Ângulo cervicotorácico igual 180º. 8</string>
+    <string name="txt_posicao_cabeca_4">Ângulo cervicotorácico menor que 180º 12</string>
+
+    <string name="bt_info">Informações</string>
+    <string name="bt_ref">Referências</string>
+    <string name="bt_metodos">Métodos</string>
+
+    <string name="refer_0">Referências</string>
+    <string name="refer_1">https://iuridiniz.github.io/capurro-ufrn/</string>
+    <string name="refer_2">https://correiodaamazonia.com/mitos-e-verdades-sobre-o-parto-normal-em-cinco-etapas/</string>
+    <string name="refer_3">https://correiodaamazonia.com/mitos-e-verdades-sobre-o-parto-normal-em-cinco-etapas/</string>
+    <string name="refer_4">https://es.slideshare.net/PRINCESSANITA/tablas-para-valorar-edg</string>
+    <string name="refer_5">https://elvisdermoni.com.br/calculos-periciais/</string>
+    <string name="refer_6">http://saudeemacao.saude.sp.gov.br/crianca/avaliacao-da-idade-gestacional/</string>
+
+    <string name="info_info">O que é.</string>
+    <string name="info_text">"      É uma ferramenta utilizada para identificar a idade gestacional em que um recém nascido nasceu. Este método somente pode ser utilizado em recém nascidos com idade gestacional igual ou superior a 30 semanas e dentro das primeiras 6 horas de vida. Este método é utilizado quando a puérpera  desconhece a data da última menstruação.
+
+        Tendo duas formas de avaliar o RN, sendo pelo somático (S) e somato neurológico (SN), no somático cada item avaliado será pontuado com um valor conforme descrito, o cálculo será (somatória dos itens + 204) / 7 = a idade gestacional. No somato neurológico será (somatória dos itens + 200) / 7= a idade gestacional."
+</string>
+
 </resources>

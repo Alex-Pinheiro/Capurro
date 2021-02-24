@@ -6,20 +6,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import br.com.babas.capurro.MyViewModel
 import br.com.babas.capurro.R
-import kotlinx.android.synthetic.main.main_activity.*
+
+import kotlinx.android.synthetic.main.main_fragment.*
 
 class MainFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = MainFragment()
-    }
+
 
     private lateinit var model: MyViewModel
     var navController: NavController? = null
@@ -38,13 +34,19 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-
-
-        val button2 = view?.findViewById<Button>(R.id.button2)
         button2?.setOnClickListener {
-            model.metodo.value = 0 // somatico
             navController?.navigate(R.id.action_mainFragment_to_teste)
         }
+
+        button?.setOnClickListener {
+            navController?.navigate(R.id.action_mainFragment_to_informacoes)
+        }
+
+        button5?.setOnClickListener {
+            navController?.navigate(R.id.action_mainFragment_to_referencias)
+        }
+
     }
+
 
 }

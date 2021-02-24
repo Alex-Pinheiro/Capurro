@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import br.com.babas.capurro.MyViewModel
 import br.com.babas.capurro.R
 import kotlinx.android.synthetic.main.fragment_pontuacao_final.*
@@ -21,6 +23,9 @@ class PontuacaoFinal : Fragment() {
     var mamilo: Int? = null
     var pele: Int? = null
     var pregas: Int? = null
+    var cachecol: Int? = null
+    var cabeca: Int? = null
+    var navController: NavController? = null
 
 
     private lateinit var model: MyViewModel
@@ -30,8 +35,8 @@ class PontuacaoFinal : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        navController = Navigation.findNavController(requireActivity(), R.id.fragmentContainerView)
 
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pontuacao_final, container, false)
     }
 
@@ -55,17 +60,20 @@ class PontuacaoFinal : Fragment() {
         }
         val pregas = Observer <Int> {
             pregas = it
-
         }
-
+        val cachecol = Observer <Int> {
+            cachecol = it
+        }
+        val cabeca = Observer <Int> {
+            cabeca = it
+        }
         val a = model.getOrelha()
         val b = model.getMamaria()
         val c = model.getMamilo()
         val d = model.getPele()
         val e = model.getPregas()
-
-        val lista = listOf(a!!, b!!, c!!, d!!, e!!)
-        val soma = lista.sum()
+        val f = model.getCachecol()
+        val g = model.getCabeca()
 
         val metodo = model.getMetodo()
 
@@ -73,9 +81,16 @@ class PontuacaoFinal : Fragment() {
 
         //0 para somático e 1 para somato neurológico
         if(metodo == 0){
+            val lista = listOf(a!!, b!!, c!!, d!!, e!!)
+            val soma = lista.sum()
             pontos = (soma+204)/7
+            textView9.text = "Os valores selecionados foram Formato da Orelha: $a, Glândula Mamaria: $b, Formato do Mamilo: $c, Textura da Pele: $d, Pregas Plantares: $e"
+
         } else if(metodo == 1){
+            val lista = listOf(a!!, b!!, c!!, d!!, e!!, f!!, g!!)
+            val soma = lista.sum()
             pontos = (soma+200)/7
+            textView9.text = "Os valores selecionados foram Formato da Orelha: $a, Glândula Mamaria: $b, Formato do Mamilo: $c, Textura da Pele:, $d, Pregas Plantares: $e, Sinal do Cachecol: $f, Posição da Cabeça: $g"
         }
 
         val semanas = when(pontos){
@@ -130,7 +145,7 @@ class PontuacaoFinal : Fragment() {
             37 -> "38 semanas e 06 dias"
             38 -> "39 semanas e 01 dia"
             39 -> "39 semanas e 04 dias"
-            40 -> " 40 semanas"
+            40 -> "40 semanas"
             41 -> "40 semanas e 03 dias"
             42 -> "40 semanas e 06 dias"
             43 -> "41 semanas e 01 dia"
@@ -144,12 +159,9 @@ class PontuacaoFinal : Fragment() {
 
             else -> throw IndexOutOfBoundsException()
         }
-
-        textView9.text = "Os valores selecionados foram Orelha $a, Mamaria $b, Mamilo $c, pele, $d, Pregas $e"
-
         textView8.text = "$pontos pontos."
 
-        textView10.text = "$semanas"
+        textView10.text = semanas
 
 
         model.orelha.observe(viewLifecycleOwner, orelha)
@@ -158,7 +170,10 @@ class PontuacaoFinal : Fragment() {
         model.pele.observe(viewLifecycleOwner, pele)
         model.pregas.observe(viewLifecycleOwner, pregas)
 
-    }
+        button6.setOnClickListener {
+            navController?.navigate(PontuacaoFinalDirections.actionPontuacaoFinalToMainFragment())
+        }
 
+    }
 
 }

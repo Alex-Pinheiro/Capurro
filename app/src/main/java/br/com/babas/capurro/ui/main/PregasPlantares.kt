@@ -35,28 +35,44 @@ class PregasPlantares : Fragment() {
 
         card1.setOnClickListener {
             model.pregas.value = 0
-            navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            if(model.getMetodo() == 0) {
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            }else if(model.getMetodo() == 1){
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToSinalDoCachecol())
+            }
         }
 
         card2.setOnClickListener {
             model.pregas.value = 5
-            navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
-        }
+            if(model.getMetodo() == 0) {
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            }else if(model.getMetodo() == 1){
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToSinalDoCachecol())
+            }        }
 
         card3.setOnClickListener {
             model.pregas.value = 10
-            navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
-        }
+            if(model.getMetodo() == 0) {
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            }else if(model.getMetodo() == 1){
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToSinalDoCachecol())
+            }        }
 
         card4.setOnClickListener{
             model.pregas.value = 15
-            navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
-        }
+            if(model.getMetodo() == 0) {
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            }else if(model.getMetodo() == 1){
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToSinalDoCachecol())
+            }        }
 
         card5.setOnClickListener{
             model.pregas.value = 20
-            navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
-        }
+            if(model.getMetodo() == 0) {
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToPontuacaoFinal())
+            }else if(model.getMetodo() == 1){
+                navController?.navigate(PregasPlantaresDirections.actionPregasPlantaresToSinalDoCachecol())
+            }        }
 
     }
 }

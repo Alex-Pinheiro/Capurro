@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_mainFragment_to_teste"
             app:destination="@id/teste" />
+        <action
+            android:id="@+id/action_mainFragment_to_referencias"
+            app:destination="@id/referencias" />
+        <action
+            android:id="@+id/action_mainFragment_to_informacoes"
+            app:destination="@id/informacoes" />
     </fragment>
     <fragment
         android:id="@+id/teste"
@@ -75,7 +81,12 @@
         android:id="@+id/pontuacaoFinal"
         android:name="br.com.babas.capurro.ui.main.PontuacaoFinal"
         android:label="fragment_pontuacao_final"
-        tools:layout="@layout/fragment_pontuacao_final" />
+        tools:layout="@layout/fragment_pontuacao_final" >
+        <action
+            android:id="@+id/action_pontuacaoFinal_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sinalDoCachecol"
         android:name="br.com.babas.capurro.ui.main.sinalDoCachecol"
@@ -94,4 +105,14 @@
             android:id="@+id/action_posicicaoDaCabeca_to_pontuacaoFinal"
             app:destination="@id/pontuacaoFinal" />
     </fragment>
+    <fragment
+        android:id="@+id/referencias"
+        android:name="br.com.babas.capurro.ui.main.Referencias"
+        android:label="fragment_referencias"
+        tools:layout="@layout/fragment_referencias" />
+    <fragment
+        android:id="@+id/informacoes"
+        android:name="br.com.babas.capurro.ui.main.Informacoes"
+        android:label="fragment_informacoes"
+        tools:layout="@layout/fragment_informacoes" />
 </navigation>

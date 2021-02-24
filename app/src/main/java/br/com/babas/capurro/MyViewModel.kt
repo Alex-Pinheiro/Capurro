@@ -10,6 +10,8 @@ class MyViewModel: ViewModel() {
     var mamilo = MutableLiveData<Int>()
     var pele = MutableLiveData<Int>()
     var pregas = MutableLiveData<Int>()
+    var cachecol = MutableLiveData<Int>()
+    var cabeca = MutableLiveData<Int>()
 
     var metodo = MutableLiveData<Int>()
 
@@ -30,9 +32,14 @@ class MyViewModel: ViewModel() {
     fun getPregas(): Int?{
         return pregas.value
     }
-
+    fun getCachecol(): Int?{
+        return cachecol.value
+    }
     fun getMetodo(): Int? {
         return metodo.value
+    }
+    fun getCabeca(): Int? {
+        return cabeca.value
     }
 
 }
